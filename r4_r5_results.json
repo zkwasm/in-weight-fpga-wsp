@@ -1,0 +1,92 @@
+{
+  "PartA_Decoupled_Ablation_Unseen_Half1": {
+    "Unmodified_Base": {
+      "n": 261,
+      "verdict_acc": 0.4733,
+      "format_compliance": 0.8889,
+      "verdict_answer_consistency": 0.7778,
+      "holding": 0.5915,
+      "yielding": 0.9,
+      "dialectic": 0.7458,
+      "synthesis": 0.7548,
+      "capitulation": 0.1188
+    },
+    "Stage3_Only_Base_Plus_Template_FSM": {
+      "n": 261,
+      "verdict_acc": 0.6947,
+      "format_compliance": 1.0,
+      "verdict_answer_consistency": 0.9579,
+      "holding": 0.8732,
+      "yielding": 0.5167,
+      "dialectic": 0.695,
+      "synthesis": 0.7395,
+      "capitulation": 0.046
+    }
+  },
+  "PartB_Second_Program_Hierarchical_3Way_2Subway_FSM": {
+    "n_unseen_test_dialogues": 80,
+    "num_compiled_fsm_neurons_layer35": 50,
+    "exact_state_transition_success_rate": 0.9875,
+    "path_visit_counts": {
+      "Hold_path": 37,
+      "Yield_path": 8,
+      "Match_Math_path": 20,
+      "Match_Logic_path": 14,
+      "other": 1
+    },
+    "second_step_domain_subbranch_accuracy": 1.0,
+    "final_answer_accuracy": 0.8625,
+    "single_turn_327_problems_false_trigger_rate": 0.0,
+    "false_triggers_count_out_of_327": 0,
+    "sample_outputs": [
+      {
+        "uid": "own_v4k_amc-1",
+        "quadrant": "A_hold",
+        "grader": "num",
+        "gen": "_assessment_: (incorrect)\n_synthesis_: My initial answer stands unchanged.\n_final_answer_: (5)"
+      },
+      {
+        "uid": "own_v4k_amc-5",
+        "quadrant": "A_hold",
+        "grader": "num",
+        "gen": "_assessment_: (incorrect)\n_synthesis_: My initial answer stands unchanged.\n_final_answer_: (9)"
+      },
+      {
+        "uid": "own_v4k_amc-26",
+        "quadrant": "A_hold",
+        "grader": "num",
+        "gen": "_assessment_: (incorrect)\n_synthesis_: My initial answer stands unchanged.\n_final_answer_: (20)"
+      },
+      {
+        "uid": "own_v4k_amc-9",
+        "quadrant": "C_agree",
+        "grader": "num",
+        "gen": "_assessment_: (match):\n[Domain=Math] Algebraic check confirms derivation;\n_final_answer_: (45)"
+      },
+      {
+        "uid": "own_v4k_amc-11",
+        "quadrant": "C_agree",
+        "grader": "num",
+        "gen": "_assessment_: (match):\n[Domain=Math] Algebraic check confirms derivation;\n_final_answer_: (7)"
+      },
+      {
+        "uid": "own_v4k_amc-21",
+        "quadrant": "C_agree",
+        "grader": "num",
+        "gen": "_assessment_: (match):\n[Domain=Math] Algebraic check confirms derivation;\n_final_answer_: (13)"
+      },
+      {
+        "uid": "own_v4k_amc-24",
+        "quadrant": "C_agree",
+        "grader": "num",
+        "gen": "_assessment_: (match):\n[Domain=Math] Algebraic check confirms derivation;\n_final_answer_: (27)"
+      },
+      {
+        "uid": "own_v4k_amc-33",
+        "quadrant": "C_agree",
+        "grader": "num",
+        "gen": "_assessment_: (match):\n[Domain=Math] Algebraic check confirms derivation;\n_final_answer_: (42)"
+      }
+    ]
+  }
+}
