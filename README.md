@@ -1,6 +1,6 @@
 # In-Weight FPGA: Compiling Multi-Step Dialectical State Machines into Dormant Transformer Neurons via Zero-KV-Drift Closed-Form Linear Algebra
 
-**[English](README.md) | [简体中文](README_CN.md) | [Full Paper Manuscript](PAPER_MANUSCRIPT.md) | [Methodology Spec](WSP_GENERAL_METHODOLOGY.md)**
+**[English](README.md) | [简体中文](README_CN.md) | [PDF Paper (`paper.pdf`)](paper.pdf) | [LaTeX Source (`paper.tex`)](paper.tex) | [Full Paper Manuscript](PAPER_MANUSCRIPT.md) | [Methodology Spec](WSP_GENERAL_METHODOLOGY.md)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Models: Qwen3 & Llama-3.1](https://img.shields.io/badge/Models-Qwen3--8B%20%7C%20Llama--3.1--8B-blue.svg)](#headline-results-3780-real-adversarial-dialogues)

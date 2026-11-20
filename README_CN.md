@@ -1,6 +1,6 @@
 # In-Weight FPGA：基于零 KV 漂移闭式线性代数的休眠神经元多步辩证状态机权重编译
 
-**[English](README.md) | [简体中文](README_CN.md) | [完整英文学术论文手稿](PAPER_MANUSCRIPT.md) | [通用数学方法论规范](WSP_GENERAL_METHODOLOGY.md)**
+**[English](README.md) | [简体中文](README_CN.md) | [PDF 论文正稿 (`paper.pdf`)](paper.pdf) | [LaTeX 源码 (`paper.tex`)](paper.tex) | [完整英文学术论文手稿](PAPER_MANUSCRIPT.md) | [通用数学方法论规范](WSP_GENERAL_METHODOLOGY.md)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Models: Qwen3 & Llama-3.1](https://img.shields.io/badge/支持架构-Qwen3--8B%20%7C%20Llama--3.1--8B-blue.svg)](#核心实验结果3780-轮真实对抗对话正面对标-selfd-rl)
