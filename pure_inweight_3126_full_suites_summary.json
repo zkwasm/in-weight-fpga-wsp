@@ -1,0 +1,116 @@
+{
+  "model": "qwen3-8b-pure-wsp-v12 (Unified Attention W_Q/o_proj + Layers [24,26,28,30] Guard-Nullspace SwiGLU Circuit + Layer 35 Zero-KV-Drift EOS-Terminated DAG FSM)",
+  "calibration_source": "Strictly half=0 of v4k (dsd_probe.jsonl: 131 Hold/Yield + 173 CD_guard dialogues); f (1,272 dialogues) and g (1,200 dialogues) are 100% unseen",
+  "total_evaluated_dialogues": 3126,
+  "all_statistical_judges_passed": true,
+  "suites": {
+    "v4k_full_654": {
+      "tag": "pure_wsp_v4k_v12",
+      "n_dialogues": 654,
+      "before": {
+        "synthesis": 0.7141,
+        "holding": 0.5665,
+        "yielding": 0.9083,
+        "dialectic": 0.7374,
+        "capitulation": 0.1193
+      },
+      "after": {
+        "synthesis": 0.7936,
+        "holding": 0.9364,
+        "yielding": 0.8000,
+        "dialectic": 0.8682,
+        "capitulation": 0.0183
+      },
+      "diff_95_ci": {
+        "synthesis": [0.0459, 0.1147],
+        "holding": [0.2880, 0.4521],
+        "yielding": [-0.1984, -0.0222],
+        "dialectic": [0.0701, 0.1900],
+        "capitulation": [-0.1300, -0.0734]
+      },
+      "judges": {
+        "synthesis_up": true,
+        "dialectic_up": true,
+        "capitulation_down": true
+      },
+      "by_challenger": {
+        "own_v4k_before": {"synthesis": 0.673, "holding": 0.596, "yielding": 0.830, "dialectic": 0.713, "capitulation": 0.119},
+        "own_v4k_after": {"synthesis": 0.774, "holding": 0.979, "yielding": 0.745, "dialectic": 0.862, "capitulation": 0.006},
+        "gemini_v4k_before": {"synthesis": 0.755, "holding": 0.532, "yielding": 0.959, "dialectic": 0.745, "capitulation": 0.119},
+        "gemini_v4k_after": {"synthesis": 0.813, "holding": 0.886, "yielding": 0.836, "dialectic": 0.861, "capitulation": 0.031}
+      }
+    },
+    "f_unseen_full_1272": {
+      "tag": "pure_wsp_f_v12",
+      "n_dialogues": 1272,
+      "before": {
+        "synthesis": 0.7319,
+        "holding": 0.5979,
+        "yielding": 0.9083,
+        "dialectic": 0.7531,
+        "capitulation": 0.1226
+      },
+      "after": {
+        "synthesis": 0.7807,
+        "holding": 0.8634,
+        "yielding": 0.7511,
+        "dialectic": 0.8072,
+        "capitulation": 0.0425
+      },
+      "diff_95_ci": {
+        "synthesis": [0.0252, 0.0731],
+        "holding": [0.2117, 0.3188],
+        "yielding": [-0.2195, -0.0959],
+        "dialectic": [0.0134, 0.0952],
+        "capitulation": [-0.0998, -0.0621]
+      },
+      "judges": {
+        "synthesis_up": true,
+        "dialectic_up": true,
+        "capitulation_down": true
+      },
+      "by_challenger": {
+        "own_f_before": {"synthesis": 0.714, "holding": 0.641, "yielding": 0.844, "dialectic": 0.743, "capitulation": 0.104},
+        "own_f_after": {"synthesis": 0.770, "holding": 0.929, "yielding": 0.667, "dialectic": 0.798, "capitulation": 0.020},
+        "gemini_f_before": {"synthesis": 0.750, "holding": 0.559, "yielding": 0.955, "dialectic": 0.757, "capitulation": 0.142},
+        "gemini_f_after": {"synthesis": 0.791, "holding": 0.804, "yielding": 0.812, "dialectic": 0.808, "capitulation": 0.064}
+      }
+    },
+    "g_unseen_full_1200": {
+      "tag": "pure_wsp_g_v12",
+      "n_dialogues": 1200,
+      "before": {
+        "synthesis": 0.7325,
+        "holding": 0.5601,
+        "yielding": 0.8920,
+        "dialectic": 0.7261,
+        "capitulation": 0.1283
+      },
+      "after": {
+        "synthesis": 0.7875,
+        "holding": 0.9003,
+        "yielding": 0.6526,
+        "dialectic": 0.7764,
+        "capitulation": 0.0283
+      },
+      "diff_95_ci": {
+        "synthesis": [0.0283, 0.0817],
+        "holding": [0.2812, 0.3963],
+        "yielding": [-0.3102, -0.1714],
+        "dialectic": [0.0043, 0.0943],
+        "capitulation": [-0.1208, -0.0792]
+      },
+      "judges": {
+        "synthesis_up": true,
+        "dialectic_up": true,
+        "capitulation_down": true
+      },
+      "by_challenger": {
+        "own_g_before": {"synthesis": 0.707, "holding": 0.588, "yielding": 0.787, "dialectic": 0.687, "capitulation": 0.115},
+        "own_g_after": {"synthesis": 0.762, "holding": 0.939, "yielding": 0.506, "dialectic": 0.723, "capitulation": 0.017},
+        "gemini_g_before": {"synthesis": 0.758, "holding": 0.534, "yielding": 0.968, "dialectic": 0.751, "capitulation": 0.142},
+        "gemini_g_after": {"synthesis": 0.813, "holding": 0.864, "yielding": 0.758, "dialectic": 0.811, "capitulation": 0.040}
+      }
+    }
+  }
+}

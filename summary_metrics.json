@@ -1,0 +1,364 @@
+{
+  "qwen3_0_6b": {
+    "baseline": {
+      "description": "Unmodified Base Model (Single-Pass Verdict-First)",
+      "target_layers": [],
+      "params_modified": 0,
+      "pct_modified": "0%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 100,
+        "yield_truth_acc": 0,
+        "dialectical_verdict_acc": 50,
+        "synthesis_final_ans_acc": 87.5,
+        "margin_gap": 0.203
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 87.5,
+        "yield_truth_acc": 12.5,
+        "dialectical_verdict_acc": 56.3,
+        "synthesis_final_ans_acc": 81.3,
+        "margin_gap": 1.078
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 100,
+        "yield_truth_acc": 0,
+        "dialectical_verdict_acc": 50,
+        "synthesis_final_ans_acc": 87.5,
+        "margin_gap": -0.438
+      },
+      "preservation_math_acc": "75.0%"
+    },
+    "wsp_exp1_anti_capitulation_rank1": {
+      "description": "Sparks-of-WSP Unidirectional Rank-1 Edit on 64 cols in layers [14, 13]",
+      "target_layers": [
+        14,
+        13
+      ],
+      "params_modified": 131072,
+      "pct_modified": "0.02199%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 12.5,
+        "hold_ground_acc": 87.5,
+        "stubbornness_rate": 87.5,
+        "yield_truth_acc": 12.5,
+        "dialectical_verdict_acc": 50,
+        "synthesis_final_ans_acc": 68.8,
+        "margin_gap": 0.172
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 12.5,
+        "hold_ground_acc": 87.5,
+        "stubbornness_rate": 50,
+        "yield_truth_acc": 50,
+        "dialectical_verdict_acc": 68.8,
+        "synthesis_final_ans_acc": 75,
+        "margin_gap": 1.016
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 100,
+        "yield_truth_acc": 0,
+        "dialectical_verdict_acc": 50,
+        "synthesis_final_ans_acc": 75,
+        "margin_gap": -0.313
+      },
+      "preservation_math_acc": "75.0%"
+    },
+    "wsp_exp2_dialectical_orthogonal": {
+      "description": "2-Layer Orthogonal-Protected Dialectical Rank-1 Edit on 64 cols in layers [25, 27]",
+      "target_layers": [
+        25,
+        27
+      ],
+      "params_modified": 131072,
+      "pct_modified": "0.02199%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 81.3,
+        "margin_gap": 5.203
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 25,
+        "yield_truth_acc": 75,
+        "dialectical_verdict_acc": 87.5,
+        "synthesis_final_ans_acc": 81.3,
+        "margin_gap": 4.922
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 75,
+        "yield_truth_acc": 25,
+        "dialectical_verdict_acc": 62.5,
+        "synthesis_final_ans_acc": 75,
+        "margin_gap": 3.656
+      },
+      "preservation_math_acc": "75.0%"
+    },
+    "wsp_exp4_multilayer_exact_calibrated": {
+      "description": "4-Layer Exact-Jacobian Calibrated Dialectical WSP on 96 cols in layers [25, 27, 24, 26]",
+      "target_layers": [
+        25,
+        27,
+        24,
+        26
+      ],
+      "params_modified": 393216,
+      "pct_modified": "0.06597%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 25,
+        "hold_ground_acc": 75,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 87.5,
+        "synthesis_final_ans_acc": 75,
+        "margin_gap": 6.406
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 87.5,
+        "margin_gap": 7
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 50,
+        "yield_truth_acc": 50,
+        "dialectical_verdict_acc": 75,
+        "synthesis_final_ans_acc": 75,
+        "margin_gap": 5.5
+      },
+      "preservation_math_acc": "75.0%"
+    },
+    "wsp_exp5_nullspace_invariant_circuit": {
+      "description": "4-Layer Problem-Nullspace Invariant Joint Mid+Late Circuit WSP (128 cols in layers [14, 13, 25, 27])",
+      "target_layers": [
+        14,
+        13,
+        25,
+        27
+      ],
+      "params_modified": 524288,
+      "pct_modified": "0.08796%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 50,
+        "hold_ground_acc": 50,
+        "stubbornness_rate": 62.5,
+        "yield_truth_acc": 37.5,
+        "dialectical_verdict_acc": 43.8,
+        "synthesis_final_ans_acc": 43.8,
+        "margin_gap": -24.529
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 75,
+        "yield_truth_acc": 25,
+        "dialectical_verdict_acc": 62.5,
+        "synthesis_final_ans_acc": 62.5,
+        "margin_gap": 26.285
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 50,
+        "hold_ground_acc": 50,
+        "stubbornness_rate": 75,
+        "yield_truth_acc": 25,
+        "dialectical_verdict_acc": 37.5,
+        "synthesis_final_ans_acc": 37.5,
+        "margin_gap": -47.125
+      },
+      "preservation_math_acc": "0.0%"
+    }
+  },
+  "qwen3_8b": {
+    "baseline": {
+      "description": "Unmodified Qwen3-0.6B Base Model",
+      "target_layers": [],
+      "params_modified": 0,
+      "pct_modified": "0%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 100,
+        "margin_gap": 22.125
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 12.5,
+        "yield_truth_acc": 87.5,
+        "dialectical_verdict_acc": 93.8,
+        "synthesis_final_ans_acc": 100,
+        "margin_gap": 22.531
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 75,
+        "margin_gap": 22.5
+      },
+      "preservation_math_acc": "100.0%"
+    },
+    "wsp_exp1_anti_capitulation_rank1": {
+      "description": "Sparks-of-WSP Rank-1 Edit on 64 cols of mlp.down_proj in layers [28, 27] (Unidirectional Anti-Capitulation)",
+      "target_layers": [
+        28,
+        27
+      ],
+      "params_modified": 524288,
+      "pct_modified": "0.0064%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 100,
+        "margin_gap": 18.906
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 100,
+        "margin_gap": 18.969
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 75,
+        "margin_gap": 19.063
+      },
+      "preservation_math_acc": "100.0%"
+    },
+    "wsp_exp2_dialectical_orthogonal": {
+      "description": "Orthogonal-Protected Contrastive Dialectical Rank-1 Edit on 64 cols in layers [32, 33]",
+      "target_layers": [
+        32,
+        33
+      ],
+      "params_modified": 524288,
+      "pct_modified": "0.0064%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 100,
+        "margin_gap": 28.438
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 100,
+        "margin_gap": 28.906
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 0,
+        "hold_ground_acc": 100,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 100,
+        "synthesis_final_ans_acc": 62.5,
+        "margin_gap": 28.563
+      },
+      "preservation_math_acc": "100.0%"
+    },
+    "wsp_exp3_closed_form_ridge": {
+      "description": "Closed-Form Ridge WSP Edit on 64 cols in layers [32, 33]",
+      "target_layers": [
+        32,
+        33
+      ],
+      "params_modified": 524288,
+      "pct_modified": "0.0064%",
+      "calib": {
+        "n_total": 16,
+        "capitulation_rate": 62.5,
+        "hold_ground_acc": 37.5,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 68.8,
+        "synthesis_final_ans_acc": 93.8,
+        "margin_gap": 9.375
+      },
+      "test": {
+        "n_total": 16,
+        "capitulation_rate": 100,
+        "hold_ground_acc": 0,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 50,
+        "synthesis_final_ans_acc": 87.5,
+        "margin_gap": 9.188
+      },
+      "hard_test": {
+        "n_total": 8,
+        "capitulation_rate": 75,
+        "hold_ground_acc": 25,
+        "stubbornness_rate": 0,
+        "yield_truth_acc": 100,
+        "dialectical_verdict_acc": 62.5,
+        "synthesis_final_ans_acc": 62.5,
+        "margin_gap": 9.5
+      },
+      "preservation_math_acc": "100.0%"
+    }
+  }
+}

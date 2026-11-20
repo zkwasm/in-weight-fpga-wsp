@@ -1,0 +1,21 @@
+{
+  "title": "In-Weight FPGA: Compiling Multi-Step Dialectical State Machines into Dormant Transformer Neurons via Zero-KV-Drift Closed-Form Linear Algebra",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Closed-form Weight Space Programming (WSP) framework that compiles cross-context attention routing, multi-domain Guard-Nullspace SwiGLU verification circuits, and terminal-layer Zero-KV-Drift DAG finite state machines directly into ~0.035% of dormant Transformer parameters without gradient descent or inference scaffolding, outperforming reinforcement learning (SelfD-RL, arXiv:2611.17563) across 3,780 adversarial dialogues on Qwen3-8B and Meta-Llama-3.1-8B-Instruct.",
+  "creators": [
+    {
+      "name": "Tom"
+    }
+  ],
+  "keywords": [
+    "Weight Space Programming",
+    "Model Editing",
+    "Dialectical Reasoning",
+    "Anti-Sycophancy",
+    "Mechanistic Interpretability",
+    "SwiGLU",
+    "Large Language Models"
+  ],
+  "license": "MIT"
+}

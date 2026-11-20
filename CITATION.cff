@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or methodology in your research, please cite it using the metadata below."
+title: "In-Weight FPGA: Compiling Multi-Step Dialectical State Machines into Dormant Transformer Neurons via Zero-KV-Drift Closed-Form Linear Algebra"
+type: software
+authors:
+  - given-names: "Tom"
+    name-particle: ""
+version: 1.0.0
+date-released: 2026-11-20
+license: MIT
+repository-code: "https://github.com/zkwasm/in-weight-fpga-wsp"
+url: "https://github.com/zkwasm/in-weight-fpga-wsp"
+keywords:
+  - Weight Space Programming
+  - Model Editing
+  - Dialectical Reasoning
+  - Sycophancy
+  - Mechanistic Interpretability
+  - SwiGLU
+  - Finite State Machine
+  - Large Language Models
+abstract: >-
+  We identify that the failure of traditional mid-layer weight editing and activation steering in multi-step autoregressive generation stems from KV-Cache Autoregressive Drift: control signals injected into intermediate layers pollute downstream KV caches across subsequent generation steps. By exploiting the topological uniqueness of the terminal MLP layer (Layer L-1, which executes strictly after all self-attention KV cache writes) together with bfloat16 SiLU floating-point underflow in dormant SwiGLU neurons and a Whitened Unembedding Dual Basis, we compile a complete three-stage dialectical verification circuit and branching DAG finite state machine directly into ~0.035% of model weights in 30 seconds with zero gradient descent. Across 3,780 unfiltered 3-turn adversarial dialogues on Qwen3-8B and Meta-Llama-3.1-8B-Instruct, our method passes 12/12 paired bootstrap 95% confidence interval tests and outperforms reinforcement learning (SelfD-RL, arXiv:2611.17563) without reward-hacking stubbornness.

@@ -1,0 +1,83 @@
+{
+  "title": "In-Weight FPGA: Compiling Multi-Step Dialectical State Machines into Dormant Transformer Neurons via Zero-KV-Drift Closed-Form Linear Algebra",
+  "total_evaluated_dialogues": 3780,
+  "statistical_significance_tests_passed": "12 / 12 (100%)",
+  "bootstrap_iterations": 10000,
+  "paper_baseline_comparison_arXiv_2611_17563": {
+    "Qwen3_8B_Paper_Base": {
+      "synthesis": 0.628,
+      "holding": 0.533,
+      "yielding": 0.841,
+      "dialectic": 0.687,
+      "capitulation": 0.103
+    },
+    "Qwen3_8B_Paper_SelfD_RL": {
+      "synthesis": 0.735,
+      "holding": 0.889,
+      "yielding": 0.533,
+      "dialectic": 0.711,
+      "capitulation": 0.010,
+      "note": "Requires multi-round RL across 100% of parameters; suffers -30.8% Yielding collapse due to reward hacking."
+    }
+  },
+  "our_pure_inweight_wsp_suites": {
+    "Suite_1_Qwen3_8B_v4k_654": {
+      "model": "Qwen/Qwen3-8B (L=36, d=4096, d_ffn=12288)",
+      "edited_layers": {"attn_o_proj": [24], "attn_w_q": [29, 30, 31, 32, 33, 34, 35], "dial_mlp": [24, 26, 28, 30], "fsm_mlp": [35]},
+      "n_dialogues": 654,
+      "before": {"synthesis": 0.7141, "holding": 0.5665, "yielding": 0.9083, "dialectic": 0.7374, "capitulation": 0.1193},
+      "after": {"synthesis": 0.7936, "holding": 0.9364, "yielding": 0.8000, "dialectic": 0.8682, "capitulation": 0.0183},
+      "diff_95_ci": {
+        "synthesis": [0.0459, 0.1147],
+        "holding": [0.2880, 0.4521],
+        "yielding": [-0.1984, -0.0222],
+        "dialectic": [0.0701, 0.1900],
+        "capitulation": [-0.1300, -0.0734]
+      },
+      "judges": {"synthesis_up": true, "dialectic_up": true, "capitulation_down": true}
+    },
+    "Suite_2_Qwen3_8B_Unseen_f_1272": {
+      "model": "Qwen/Qwen3-8B (Frozen weights from Suite 1 half=0 calibration)",
+      "n_dialogues": 1272,
+      "before": {"synthesis": 0.7319, "holding": 0.5979, "yielding": 0.9083, "dialectic": 0.7531, "capitulation": 0.1226},
+      "after": {"synthesis": 0.7807, "holding": 0.8634, "yielding": 0.7511, "dialectic": 0.8072, "capitulation": 0.0425},
+      "diff_95_ci": {
+        "synthesis": [0.0252, 0.0731],
+        "holding": [0.2117, 0.3188],
+        "yielding": [-0.2195, -0.0959],
+        "dialectic": [0.0134, 0.0952],
+        "capitulation": [-0.0998, -0.0621]
+      },
+      "judges": {"synthesis_up": true, "dialectic_up": true, "capitulation_down": true}
+    },
+    "Suite_3_Qwen3_8B_Unseen_g_1200": {
+      "model": "Qwen/Qwen3-8B (Frozen weights from Suite 1 half=0 calibration)",
+      "n_dialogues": 1200,
+      "before": {"synthesis": 0.7325, "holding": 0.5601, "yielding": 0.8920, "dialectic": 0.7261, "capitulation": 0.1283},
+      "after": {"synthesis": 0.7875, "holding": 0.9003, "yielding": 0.6526, "dialectic": 0.7764, "capitulation": 0.0283},
+      "diff_95_ci": {
+        "synthesis": [0.0283, 0.0817],
+        "holding": [0.2812, 0.3963],
+        "yielding": [-0.3102, -0.1714],
+        "dialectic": [0.0043, 0.0943],
+        "capitulation": [-0.1208, -0.0792]
+      },
+      "judges": {"synthesis_up": true, "dialectic_up": true, "capitulation_down": true}
+    },
+    "Suite_4_Llama_3_1_8B_Instruct_654": {
+      "model": "Meta-Llama-3.1-8B-Instruct (L=32, d=4096, d_ffn=14336)",
+      "edited_layers": {"attn_o_proj": [21], "dial_mlp": [21, 23, 24, 26], "fsm_mlp": [31]},
+      "n_dialogues": 654,
+      "before": {"synthesis": 0.3991, "holding": 0.6791, "yielding": 0.4189, "dialectic": 0.5490, "capitulation": 0.1070},
+      "after": {"synthesis": 0.4878, "holding": 0.9488, "yielding": 0.5135, "dialectic": 0.7312, "capitulation": 0.0199},
+      "diff_95_ci": {
+        "synthesis": [0.0520, 0.1254],
+        "holding": [0.1962, 0.3431],
+        "yielding": [-0.0725, 0.2651],
+        "dialectic": [0.0895, 0.2753],
+        "capitulation": [-0.1162, -0.0596]
+      },
+      "judges": {"synthesis_up": true, "dialectic_up": true, "capitulation_down": true}
+    }
+  }
+}

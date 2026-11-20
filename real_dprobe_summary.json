@@ -1,0 +1,620 @@
+{
+  "orig_v4k_freeform_baseline": {
+    "description": "Original Qwen3-8B Free-Form 4096-Token Baseline (run_own_v4k + run_gemini_v4k)",
+    "params_modified": 0,
+    "pct_modified": "0%",
+    "calib": {
+      "n_total": 54,
+      "hold_ground_verdict_acc": 36.7,
+      "capitulation_rate": 63.3,
+      "yield_truth_verdict_acc": 83.3,
+      "stubbornness_rate": 16.7,
+      "dialectical_verdict_acc": 57.4,
+      "hold_final_ans_acc": 56.7,
+      "yield_final_ans_acc": 83.3,
+      "synthesis_final_ans_acc": 68.5,
+      "verdict_answer_consistency": 77.8,
+      "by_benchmark": {
+        "amc": {
+          "n": 4,
+          "verdict_acc": 50,
+          "final_ans_acc": 50
+        },
+        "math500": {
+          "n": 7,
+          "verdict_acc": 57.1,
+          "final_ans_acc": 71.4
+        },
+        "olympiadbench": {
+          "n": 5,
+          "verdict_acc": 80,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 16,
+          "verdict_acc": 56.3,
+          "final_ans_acc": 62.5
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 66.7,
+          "final_ans_acc": 66.7
+        },
+        "mmlu_pro": {
+          "n": 8,
+          "verdict_acc": 50,
+          "final_ans_acc": 50
+        },
+        "cruxeval_o": {
+          "n": 8,
+          "verdict_acc": 50,
+          "final_ans_acc": 87.5
+        }
+      }
+    },
+    "test": {
+      "n_total": 56,
+      "hold_ground_verdict_acc": 32.1,
+      "capitulation_rate": 67.9,
+      "yield_truth_verdict_acc": 85.7,
+      "stubbornness_rate": 14.3,
+      "dialectical_verdict_acc": 58.9,
+      "hold_final_ans_acc": 71.4,
+      "yield_final_ans_acc": 96.4,
+      "synthesis_final_ans_acc": 83.9,
+      "verdict_answer_consistency": 71.4,
+      "by_benchmark": {
+        "amc": {
+          "n": 10,
+          "verdict_acc": 70,
+          "final_ans_acc": 100
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 16.7,
+          "final_ans_acc": 50
+        },
+        "cruxeval_o": {
+          "n": 5,
+          "verdict_acc": 60,
+          "final_ans_acc": 100
+        },
+        "math500": {
+          "n": 12,
+          "verdict_acc": 58.3,
+          "final_ans_acc": 100
+        },
+        "mmlu_pro": {
+          "n": 6,
+          "verdict_acc": 33.3,
+          "final_ans_acc": 50
+        },
+        "olympiadbench": {
+          "n": 6,
+          "verdict_acc": 66.7,
+          "final_ans_acc": 83.3
+        },
+        "strategyqa": {
+          "n": 11,
+          "verdict_acc": 81.8,
+          "final_ans_acc": 81.8
+        }
+      }
+    }
+  },
+  "assessment_anchored_baseline": {
+    "description": "Unmodified Qwen3-8B Assessment-Anchored Baseline",
+    "params_modified": 0,
+    "pct_modified": "0%",
+    "calib": {
+      "n_total": 54,
+      "hold_ground_verdict_acc": 90,
+      "capitulation_rate": 10,
+      "yield_truth_verdict_acc": 45.8,
+      "stubbornness_rate": 54.2,
+      "dialectical_verdict_acc": 70.4,
+      "hold_final_ans_acc": 90,
+      "yield_final_ans_acc": 45.8,
+      "synthesis_final_ans_acc": 70.4,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 4,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "math500": {
+          "n": 7,
+          "verdict_acc": 71.4,
+          "final_ans_acc": 71.4
+        },
+        "olympiadbench": {
+          "n": 5,
+          "verdict_acc": 80,
+          "final_ans_acc": 80
+        },
+        "strategyqa": {
+          "n": 16,
+          "verdict_acc": 56.3,
+          "final_ans_acc": 56.3
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "mmlu_pro": {
+          "n": 8,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "cruxeval_o": {
+          "n": 8,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        }
+      }
+    },
+    "test": {
+      "n_total": 56,
+      "hold_ground_verdict_acc": 85.7,
+      "capitulation_rate": 14.3,
+      "yield_truth_verdict_acc": 57.1,
+      "stubbornness_rate": 42.9,
+      "dialectical_verdict_acc": 71.4,
+      "hold_final_ans_acc": 89.3,
+      "yield_final_ans_acc": 57.1,
+      "synthesis_final_ans_acc": 73.2,
+      "verdict_answer_consistency": 98.2,
+      "by_benchmark": {
+        "amc": {
+          "n": 10,
+          "verdict_acc": 90,
+          "final_ans_acc": 90
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "cruxeval_o": {
+          "n": 5,
+          "verdict_acc": 40,
+          "final_ans_acc": 60
+        },
+        "math500": {
+          "n": 12,
+          "verdict_acc": 58.3,
+          "final_ans_acc": 58.3
+        },
+        "mmlu_pro": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "olympiadbench": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 11,
+          "verdict_acc": 45.5,
+          "final_ans_acc": 45.5
+        }
+      }
+    }
+  },
+  "wsp_exp4_ungated_4layer": {
+    "description": "4-Layer Exact-Jacobian Orthogonal Subspace WSP on layers [24, 26, 28, 30]",
+    "params_modified": 2097152,
+    "pct_modified": "0.0256%",
+    "calib": {
+      "n_total": 54,
+      "hold_ground_verdict_acc": 83.3,
+      "capitulation_rate": 16.7,
+      "yield_truth_verdict_acc": 58.3,
+      "stubbornness_rate": 41.7,
+      "dialectical_verdict_acc": 72.2,
+      "hold_final_ans_acc": 83.3,
+      "yield_final_ans_acc": 58.3,
+      "synthesis_final_ans_acc": 72.2,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 4,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "math500": {
+          "n": 7,
+          "verdict_acc": 71.4,
+          "final_ans_acc": 71.4
+        },
+        "olympiadbench": {
+          "n": 5,
+          "verdict_acc": 80,
+          "final_ans_acc": 80
+        },
+        "strategyqa": {
+          "n": 16,
+          "verdict_acc": 62.5,
+          "final_ans_acc": 62.5
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "mmlu_pro": {
+          "n": 8,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "cruxeval_o": {
+          "n": 8,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        }
+      }
+    },
+    "test": {
+      "n_total": 56,
+      "hold_ground_verdict_acc": 82.1,
+      "capitulation_rate": 17.9,
+      "yield_truth_verdict_acc": 75,
+      "stubbornness_rate": 25,
+      "dialectical_verdict_acc": 78.6,
+      "hold_final_ans_acc": 82.1,
+      "yield_final_ans_acc": 75,
+      "synthesis_final_ans_acc": 78.6,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 10,
+          "verdict_acc": 80,
+          "final_ans_acc": 80
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "cruxeval_o": {
+          "n": 5,
+          "verdict_acc": 80,
+          "final_ans_acc": 80
+        },
+        "math500": {
+          "n": 12,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "mmlu_pro": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "olympiadbench": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 11,
+          "verdict_acc": 54.5,
+          "final_ans_acc": 54.5
+        }
+      }
+    }
+  },
+  "wsp_exp6_gated_swiglu_whitened_fisher": {
+    "description": "4-Layer Position-Gated SwiGLU Whitened-Fisher Dual-Slot WSP on layers [24, 26, 28, 30]",
+    "params_modified": 1572864,
+    "pct_modified": "0.0192%",
+    "calib": {
+      "n_total": 54,
+      "hold_ground_verdict_acc": 96.7,
+      "capitulation_rate": 3.3,
+      "yield_truth_verdict_acc": 87.5,
+      "stubbornness_rate": 12.5,
+      "dialectical_verdict_acc": 92.6,
+      "hold_final_ans_acc": 96.7,
+      "yield_final_ans_acc": 87.5,
+      "synthesis_final_ans_acc": 92.6,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 4,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "math500": {
+          "n": 7,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "olympiadbench": {
+          "n": 5,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 16,
+          "verdict_acc": 81.3,
+          "final_ans_acc": 81.3
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "mmlu_pro": {
+          "n": 8,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "cruxeval_o": {
+          "n": 8,
+          "verdict_acc": 87.5,
+          "final_ans_acc": 87.5
+        }
+      }
+    },
+    "test": {
+      "n_total": 56,
+      "hold_ground_verdict_acc": 85.7,
+      "capitulation_rate": 14.3,
+      "yield_truth_verdict_acc": 71.4,
+      "stubbornness_rate": 28.6,
+      "dialectical_verdict_acc": 78.6,
+      "hold_final_ans_acc": 85.7,
+      "yield_final_ans_acc": 71.4,
+      "synthesis_final_ans_acc": 78.6,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 10,
+          "verdict_acc": 90,
+          "final_ans_acc": 90
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "cruxeval_o": {
+          "n": 5,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "math500": {
+          "n": 12,
+          "verdict_acc": 66.7,
+          "final_ans_acc": 66.7
+        },
+        "mmlu_pro": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "olympiadbench": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 11,
+          "verdict_acc": 54.5,
+          "final_ans_acc": 54.5
+        }
+      }
+    }
+  },
+  "wsp_exp7_domain_routed_swiglu_slots": {
+    "description": "4-Layer Domain-Routed Multi-Expert SwiGLU Slots (Math/Bool/MCQ-Code) on layers [24, 26, 28, 30]",
+    "params_modified": 2359296,
+    "pct_modified": "0.0288%",
+    "calib": {
+      "n_total": 54,
+      "hold_ground_verdict_acc": 96.7,
+      "capitulation_rate": 3.3,
+      "yield_truth_verdict_acc": 83.3,
+      "stubbornness_rate": 16.7,
+      "dialectical_verdict_acc": 90.7,
+      "hold_final_ans_acc": 96.7,
+      "yield_final_ans_acc": 83.3,
+      "synthesis_final_ans_acc": 90.7,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 4,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "math500": {
+          "n": 7,
+          "verdict_acc": 71.4,
+          "final_ans_acc": 71.4
+        },
+        "olympiadbench": {
+          "n": 5,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 16,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "mmlu_pro": {
+          "n": 8,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "cruxeval_o": {
+          "n": 8,
+          "verdict_acc": 87.5,
+          "final_ans_acc": 87.5
+        }
+      }
+    },
+    "test": {
+      "n_total": 56,
+      "hold_ground_verdict_acc": 96.4,
+      "capitulation_rate": 3.6,
+      "yield_truth_verdict_acc": 75,
+      "stubbornness_rate": 25,
+      "dialectical_verdict_acc": 85.7,
+      "hold_final_ans_acc": 96.4,
+      "yield_final_ans_acc": 75,
+      "synthesis_final_ans_acc": 85.7,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 10,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "cruxeval_o": {
+          "n": 5,
+          "verdict_acc": 80,
+          "final_ans_acc": 80
+        },
+        "math500": {
+          "n": 12,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "mmlu_pro": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "olympiadbench": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 11,
+          "verdict_acc": 81.8,
+          "final_ans_acc": 81.8
+        }
+      }
+    }
+  },
+  "wsp_exp8_6layer_4regime_style_debiased": {
+    "description": "6-Layer 4-Regime (num/bool/mcq/value) + Challenger-Style Debiased 3x3 Jacobian SwiGLU WSP on layers [20, 24, 26, 28, 30, 32]",
+    "params_modified": 4718592,
+    "pct_modified": "0.05761%",
+    "calib": {
+      "n_total": 54,
+      "hold_ground_verdict_acc": 100,
+      "capitulation_rate": 0,
+      "yield_truth_verdict_acc": 100,
+      "stubbornness_rate": 0,
+      "dialectical_verdict_acc": 100,
+      "hold_final_ans_acc": 100,
+      "yield_final_ans_acc": 100,
+      "synthesis_final_ans_acc": 100,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 4,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "math500": {
+          "n": 7,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "olympiadbench": {
+          "n": 5,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 16,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "mmlu_pro": {
+          "n": 8,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "cruxeval_o": {
+          "n": 8,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        }
+      }
+    },
+    "test": {
+      "n_total": 56,
+      "hold_ground_verdict_acc": 82.1,
+      "capitulation_rate": 17.9,
+      "yield_truth_verdict_acc": 82.1,
+      "stubbornness_rate": 17.9,
+      "dialectical_verdict_acc": 82.1,
+      "hold_final_ans_acc": 82.1,
+      "yield_final_ans_acc": 82.1,
+      "synthesis_final_ans_acc": 82.1,
+      "verdict_answer_consistency": 100,
+      "by_benchmark": {
+        "amc": {
+          "n": 10,
+          "verdict_acc": 90,
+          "final_ans_acc": 90
+        },
+        "arc_challenge": {
+          "n": 6,
+          "verdict_acc": 83.3,
+          "final_ans_acc": 83.3
+        },
+        "cruxeval_o": {
+          "n": 5,
+          "verdict_acc": 80,
+          "final_ans_acc": 80
+        },
+        "math500": {
+          "n": 12,
+          "verdict_acc": 75,
+          "final_ans_acc": 75
+        },
+        "mmlu_pro": {
+          "n": 6,
+          "verdict_acc": 66.7,
+          "final_ans_acc": 66.7
+        },
+        "olympiadbench": {
+          "n": 6,
+          "verdict_acc": 100,
+          "final_ans_acc": 100
+        },
+        "strategyqa": {
+          "n": 11,
+          "verdict_acc": 81.8,
+          "final_ans_acc": 81.8
+        }
+      }
+    }
+  }
+}
