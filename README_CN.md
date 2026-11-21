@@ -1,9 +1,10 @@
 # In-Weight FPGA：基于零 KV 漂移闭式线性代数的休眠神经元多步辩证状态机权重编译
 
-**[English](README.md) | [简体中文](README_CN.md) | [PDF 论文正稿 (`paper.pdf`)](paper.pdf) | [LaTeX 源码 (`paper.tex`)](paper.tex) | [完整英文学术论文手稿](PAPER_MANUSCRIPT.md) | [通用数学方法论规范](WSP_GENERAL_METHODOLOGY.md)**
+**[English](README.md) | [简体中文](README_CN.md) | [PDF 论文正稿 (`paper.pdf`)](paper.pdf) | [LaTeX 源码 (`paper.tex`)](paper.tex) | [HF Qwen3-8B 模型](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP) | [HF Llama-3.1-8B 模型](https://huggingface.co/masstensor/Llama-3.1-8B-Instruct-InWeight-FPGA-WSP) | [HF 3,780 数据集](https://huggingface.co/datasets/masstensor/InWeight-FPGA-Dialectical-3780)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Models: Qwen3 & Llama-3.1](https://img.shields.io/badge/支持架构-Qwen3--8B%20%7C%20Llama--3.1--8B-blue.svg)](#核心实验结果3780-轮真实对抗对话正面对标-selfd-rl)
+[![HF Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-双模型权重与Bitstream-yellow)](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP)
+[![HF Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-3780轮评测数据集-yellow)](https://huggingface.co/datasets/masstensor/InWeight-FPGA-Dialectical-3780)
 [![Optimization: Zero-Gradient Closed-Form](https://img.shields.io/badge/优化方式-0%20步梯度下降%20(30秒闭式编译)-orange.svg)](#核心实验结果3780-轮真实对抗对话正面对标-selfd-rl)
 [![Statistical Tests: 12/12 Passed](https://img.shields.io/badge/10000次配对Bootstrap检验-12%2F12%20全部显著通过-brightgreen.svg)](#核心实验结果3780-轮真实对抗对话正面对标-selfd-rl)
 

@@ -1,9 +1,10 @@
 # In-Weight FPGA: Compiling Multi-Step Dialectical State Machines into Dormant Transformer Neurons via Zero-KV-Drift Closed-Form Linear Algebra
 
-**[English](README.md) | [简体中文](README_CN.md) | [PDF Paper (`paper.pdf`)](paper.pdf) | [LaTeX Source (`paper.tex`)](paper.tex) | [Full Paper Manuscript](PAPER_MANUSCRIPT.md) | [Methodology Spec](WSP_GENERAL_METHODOLOGY.md)**
+**[English](README.md) | [简体中文](README_CN.md) | [PDF Paper (`paper.pdf`)](paper.pdf) | [LaTeX Source (`paper.tex`)](paper.tex) | [HF Qwen3-8B Model](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP) | [HF Llama-3.1-8B Model](https://huggingface.co/masstensor/Llama-3.1-8B-Instruct-InWeight-FPGA-WSP) | [HF 3,780 Dataset](https://huggingface.co/datasets/masstensor/InWeight-FPGA-Dialectical-3780)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Models: Qwen3 & Llama-3.1](https://img.shields.io/badge/Models-Qwen3--8B%20%7C%20Llama--3.1--8B-blue.svg)](#headline-results-3780-real-adversarial-dialogues)
+[![HF Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models%20(Qwen3%20%26%20Llama3.1)-yellow)](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP)
+[![HF Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset%20(3780%20Dialogues)-yellow)](https://huggingface.co/datasets/masstensor/InWeight-FPGA-Dialectical-3780)
 [![Training: Zero-Gradient Closed-Form](https://img.shields.io/badge/Optimization-0%20Gradient%20Steps%20(30s%20Closed--Form)-orange.svg)](#the-first-principle-discovery-read-write-decoupling--zero-kv-drift)
 [![Statistical Tests: 12/12 Passed](https://img.shields.io/badge/Paired%20Bootstrap%2095%25%20CI-12%2F12%20Passed-brightgreen.svg)](#headline-results-3780-real-adversarial-dialogues)
 
