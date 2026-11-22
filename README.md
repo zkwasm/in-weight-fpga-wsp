@@ -1,6 +1,6 @@
 # In-Weight FPGA: Compiling Multi-Step Dialectical State Machines into Dormant Transformer Neurons via Zero-KV-Drift Closed-Form Linear Algebra
 
-**[English](README.md) | [简体中文](README_CN.md) | [PDF Paper (`paper.pdf`)](paper.pdf) | [LaTeX Source (`paper.tex`)](paper.tex) | [HF Qwen3-8B Model](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP) | [HF Llama-3.1-8B Model](https://huggingface.co/masstensor/Llama-3.1-8B-Instruct-InWeight-FPGA-WSP) | [HF 3,780 Dataset](https://huggingface.co/datasets/masstensor/InWeight-FPGA-Dialectical-3780)**
+**[English](README.md) | [PDF Paper (`paper.pdf`)](paper.pdf) | [LaTeX Source (`paper.tex`)](paper.tex) | [HF Qwen3-8B Model](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP) | [HF Llama-3.1-8B Model](https://huggingface.co/masstensor/Llama-3.1-8B-Instruct-InWeight-FPGA-WSP) | [HF 3,780 Dataset](https://huggingface.co/datasets/masstensor/InWeight-FPGA-Dialectical-3780)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![HF Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models%20(Qwen3%20%26%20Llama3.1)-yellow)](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP)
@@ -88,7 +88,6 @@ _final_answer_: (<ans>)`
 ## Repository Structure
 
 ```text
-├── README.md / README_CN.md                      # Flagship bilingual documentation
 ├── paper.pdf / paper.tex                         # Camera-ready 2-column PDF paper & LaTeX source
 ├── PAPER_MANUSCRIPT.md                           # Full English academic paper manuscript
 ├── WSP_GENERAL_METHODOLOGY.md                    # Formal mathematical & cross-model porting specification
