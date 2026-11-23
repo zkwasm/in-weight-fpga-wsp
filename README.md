@@ -1,3 +1,5 @@
+> 📌 **Standalone WSP v3.0 Methodology, Applicable Scenarios & 2-Layer Sensor–Beacon–Actuator Package**: See **[`wsp_v3_methodology/README.md`](wsp_v3_methodology/README.md)** (and [`WSP_V3_METHODOLOGY_AND_POSITIONING.md`](WSP_V3_METHODOLOGY_AND_POSITIONING.md)) for the standalone design specification, quantitative capacity bounds, physical beacon SNR verification script, and 2-layer compiler.
+
 # In-Weight FPGA: Compiling Multi-Step Dialectical State Machines into Dormant Transformer Neurons via Zero-KV-Drift Closed-Form Linear Algebra
 
 **[English](README.md) | [PDF Paper (`paper.pdf`)](paper.pdf) | [LaTeX Source (`paper.tex`)](paper.tex) | [HF Qwen3-8B Model](https://huggingface.co/masstensor/Qwen3-8B-InWeight-FPGA-WSP) | [HF Llama-3.1-8B Model](https://huggingface.co/masstensor/Llama-3.1-8B-Instruct-InWeight-FPGA-WSP) | [HF 3,780 Dataset](https://huggingface.co/datasets/masstensor/InWeight-FPGA-Dialectical-3780)**
